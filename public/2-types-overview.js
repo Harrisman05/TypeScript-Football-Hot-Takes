@@ -1,12 +1,13 @@
+"use strict";
 // Passing values with types into functions
 // JavaScript - passing in values to the function - without defining type
-var circ = function (diameter) {
+const circ = (diameter) => {
     return diameter * Math.PI;
 };
 console.log(circ('hello'));
 // TypeScript - in this function, we can pass in any data type into the circ function, and no error is shown. NAN pops up in the console as 
 // Declaring type value must be in parameter
-var circStrict = function (diameter) {
+const circStrict = (diameter) => {
     return diameter * Math.PI;
 };
 console.log(circStrict(5));
