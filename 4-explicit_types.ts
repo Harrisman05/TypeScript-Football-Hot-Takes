@@ -44,7 +44,7 @@ identification = 1234252423;
 // less specific, could be an array with any properties
 
 let harleyObj: object;
-harleyObj = {firstName: 'harley', age: 25}
+harleyObj = {firstName: 'harley', age: 25};
 
 console.log(harleyObj);
 
