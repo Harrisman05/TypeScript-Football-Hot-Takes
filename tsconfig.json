@@ -108,6 +108,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
 
-  "include": ["src", "public/11-classes.js", "public/10-app.js", "public/10-app.js", "10-app.js"]
+  "include": ["src", "public/11-classes.js", "public/10-app.js", "public/10-app.js", "10-app.js", "public/15-generics.js", "public/17-tuples.js"]
 
 }
