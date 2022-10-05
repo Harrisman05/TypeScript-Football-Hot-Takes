@@ -7,7 +7,7 @@ tsconfig used to configure complilation to place compiled JS file in
 Steps to set up:
 
 Initialise tsconfig file by running command ---> 
-tsc -- init 
+tsc --init 
 
 Enter tsconfig.json file and uncomment rootDir and outDir
 
