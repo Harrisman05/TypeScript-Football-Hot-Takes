@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src=""></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <script defer type="module" src="./public/app.js"></script>
 </head>
+
 <body>
-    
+
+    <div class="form_container">
+        <h3>Football Hot Takes</h3>
+        <p>Post an opinion of a footballer to the noteboard!</p>
+        <form action="">
+            <div class="field">
+                <label for="player_name">Player :</label>
+                <input name="player_name" type="text" id="player_input" required>
+            </div>
+            <div class="field">
+                <label for="opinion">Opinion :</label> 
+                <textarea name="opinion" type="text" id="opinion_input" required></textarea>
+            </div>
+            <div class="field">
+                <label for="contributor" >Contributor :</label>
+                <input name="contributor" type="text" id="contributor_input" required>
+            </div>
+            <button>Add</button>
+        </form>
+    </div>
+
+    <section class="opinion_section">
+        <!-- <div class="opinion_container">
+            <div id="contributor_title">Harley's Opinion</div>
+            <div id="player_name">Player: Lionel Messi</div>
+            <div id="opinion_text">Opinion: The worlds greatest player</div>
+            <button>Delete</button>
+        </div> -->
+    </section>
+
 </body>
+
 </html>

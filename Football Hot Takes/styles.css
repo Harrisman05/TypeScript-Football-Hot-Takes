@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    /* outline: 1px solid limegreen !important; */
+}
+
+body {
+    background-color: rgb(237, 238, 255);
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+form {
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: rgb(249, 218, 238);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    max-width: 345px;
+}
+
+.form_container {
+    border: 2px rgb(0, 0, 0) solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.form_container button {
+    padding: 2px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+input {
+    width: 180px;
+    padding: 3px;
+}
+
+textarea {
+    resize: vertical;
+    vertical-align: middle;
+    width: 180px;
+    padding: 3px;
+}
+
+.opinion_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.opinion_container {
+    border: rgb(0, 0, 0) 2px solid;
+    display: flex;
+    flex-direction: column; 
+    padding: 15px;
+    gap: 10px;
+}
+
+.opinion_container #contributor_title {
+    align-self: center;
+}
+
+.opinion_container button {
+    padding: 2px;
+    align-self: center;
+    width: min-content;
+}
+
