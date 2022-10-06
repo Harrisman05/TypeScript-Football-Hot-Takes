@@ -1,6 +1,6 @@
 // How to set-up typescript project for imports
-import { OpinionTemplate } from "./opinion_template.js";
-import { onInputChange, removeAutocomplete } from "./players_autocomplete.js";
+import { OpinionTemplate } from "./classes/opinion_template.js";
+import { onInputChange, removeAutocomplete } from "./functions/players_autocomplete.js";
 const body = document.querySelector("body");
 const opinion_form = document.querySelector(".form_container");
 const player_input = document.querySelector("#player_input");
