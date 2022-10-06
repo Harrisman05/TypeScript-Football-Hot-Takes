@@ -14,23 +14,29 @@ export class OpinionTemplate { // class template for creating instances of notes
         const opinion_container = document.createElement('div') as HTMLDivElement;
         opinion_container.className = "opinion_container"; 
 
-        const contributor_div = document.createElement('div') as HTMLDivElement;
+        const note_top_strip = document.createElement('div') as HTMLDivElement;
+        note_top_strip.className = "note_top_strip";
+
+        const player_label = document.createElement('div') as HTMLDivElement;
         const player_name_div = document.createElement('div') as HTMLDivElement;
+        const opinion_label = document.createElement('div') as HTMLDivElement;
         const opinion_text_div = document.createElement('div') as HTMLDivElement;
+        const contributor_label = document.createElement('div') as HTMLDivElement;
+        const contributor_div = document.createElement('div') as HTMLDivElement;
 
         const delete_button = document.createElement('button') as HTMLButtonElement;
         delete_button.className = "delete_button"
 
-        player_name_div.textContent = "Player: " + this.player_name;
-        opinion_text_div.textContent = "Opinion: " + this.opinion_input;
-        contributor_div.textContent = "Contributor: " + this.contributor;
+        player_label.textContent = "Player:"
+        player_name_div.textContent = this.player_name;
+        opinion_label.textContent = "Opinion:"
+        opinion_text_div.textContent = this.opinion_input;
+        contributor_label.textContent = "Contributor:"
+        contributor_div.textContent = this.contributor;
         delete_button.textContent = "Delete";
 
-        opinion_container.append(player_name_div);
-        opinion_container.append(opinion_text_div);
-        opinion_container.append(contributor_div);
-        opinion_container.append(delete_button);
-
+        opinion_container.append(note_top_strip, player_label, player_name_div, opinion_label, opinion_text_div, contributor_label, contributor_div,delete_button);
+        
         opinion_section.append(opinion_container);
 
     }

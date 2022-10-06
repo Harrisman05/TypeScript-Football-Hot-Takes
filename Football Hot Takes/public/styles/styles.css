@@ -17,7 +17,7 @@ h3 {
 
 form {
     border: 1px rgb(0, 0, 0) solid;
-    background-color: rgb(249, 218, 238);
+    background-color: rgb(192, 220, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -41,6 +41,7 @@ form {
     width: 180px;
     list-style-type: none;
 }
+
 .autocomplete_list button {
     width: 180px;
     text-align: left;
@@ -71,7 +72,11 @@ form {
 }
 
 .form_container .add_note {
-    padding: 2px;
+    padding: 3px;
+    cursor: pointer;
+}
+.form_container .add_note:hover {
+    filter: brightness(90%);
 }
 
 label {
@@ -95,26 +100,54 @@ textarea {
 .opinion_section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 50px;
     padding: 50px;
+    align-items: flex-start; /* prevents flex children stretching to fit div */
 }
 
 .opinion_container {
-    border: rgb(0, 0, 0) 2px solid;
-    display: flex;
-    flex-direction: column; 
-    padding: 15px;
+    position: relative;
+    border: rgb(0, 0, 0) 1px solid;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fdecda;
+    max-width: 300px;
+    padding: 35px 15px 15px 15px;
     gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.opinion_container #contributor_title {
-    align-self: center;
+.opinion_container div {
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .opinion_container button {
-    padding: 2px;
-    align-self: center;
+    background-color: #f68b8b;
+    height: 28px;
+    padding: 3px;
+    font-weight: bold;
+    border: 1px dashed black;
+    border-radius: 3px;
+    justify-self: center;
     width: min-content;
+    grid-column: 1 / 3;
+    cursor: pointer;
 }
 
+.opinion_container button:hover {
+    filter: brightness(120%);
+}
+
+.opinion_container .note_top_strip {
+    position: absolute;
+    height: 25px;
+    width: calc(100% + 2px);
+    /* to account for transform: translate adjustment */
+    background-color: rgb(98, 98, 98);
+    border: black 1px solid;
+    left: 0;
+    top: 0;
+    transform: translate(-1px, -1px);
+}

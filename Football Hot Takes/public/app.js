@@ -1,6 +1,7 @@
 // How to set-up typescript project for imports
 import { OpinionTemplate } from "./classes/opinion_template.js";
 import { onInputChange, removeAutocomplete } from "./functions/players_autocomplete.js";
+import { textareaResize } from "./functions/textarea_resize.js";
 const body = document.querySelector("body");
 const opinion_form = document.querySelector(".form_container");
 const player_input = document.querySelector("#player_input");
@@ -8,9 +9,11 @@ const opinion_input = document.querySelector("#opinion_input");
 const contributor_input = document.querySelector("#contributor_input");
 const opinion_section = document.querySelector(".opinion_section");
 // player_input.defaultValue = "Default Player Name";
-opinion_input.defaultValue = "Default Opinion";
-contributor_input.defaultValue = "Default Contributor Name";
+opinion_input.defaultValue = "Default ";
+contributor_input.defaultValue = "Default ";
 // Adding form functionality for submittal
+// const dummynote = new OpinionTemplate("conta", "Sewy", "goat");
+// dummynote.renderOpinion(opinion_section);
 opinion_form.addEventListener('submit', (e) => {
     e.preventDefault(); // prevent form submitting
     const createdNote = new OpinionTemplate(contributor_input.value, player_input.value, opinion_input.value); // create a new note instance 
@@ -31,3 +34,5 @@ opinion_section.addEventListener('click', (e) => {
 player_input.addEventListener("input", onInputChange);
 // Adding autocomplete if user clicks on any part of webpage
 body.addEventListener("click", removeAutocomplete);
+// run textareaResize function
+textareaResize();
