@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-    <script defer type="module" src="./public/app.js"></script>
+    <script defer type="module" src="./public/index.js"></script>
 </head>
 
 <body>
@@ -18,30 +18,24 @@
     <div class="form_container">
         <h3>Football Hot Takes</h3>
         <p>Post an opinion of a footballer to the noteboard!</p>
-        <form action="">
-            <div class="field">
+        <form action="" autocomplete="off">
+            <div class="field" id="player_name_field">
                 <label for="player_name">Player :</label>
                 <input name="player_name" type="text" id="player_input" required>
             </div>
             <div class="field">
-                <label for="opinion">Opinion :</label> 
+                <label for="opinion">Opinion :</label>
                 <textarea name="opinion" type="text" id="opinion_input" required></textarea>
             </div>
             <div class="field">
-                <label for="contributor" >Contributor :</label>
+                <label for="contributor">Contributor :</label>
                 <input name="contributor" type="text" id="contributor_input" required>
             </div>
-            <button>Add</button>
+            <button class="add_note">Add</button>
         </form>
     </div>
 
     <section class="opinion_section">
-        <!-- <div class="opinion_container">
-            <div id="contributor_title">Harley's Opinion</div>
-            <div id="player_name">Player: Lionel Messi</div>
-            <div id="opinion_text">Opinion: The worlds greatest player</div>
-            <button>Delete</button>
-        </div> -->
     </section>
 
 </body>
