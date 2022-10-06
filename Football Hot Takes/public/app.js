@@ -8,9 +8,8 @@ const player_input = document.querySelector("#player_input");
 const opinion_input = document.querySelector("#opinion_input");
 const contributor_input = document.querySelector("#contributor_input");
 const opinion_section = document.querySelector(".opinion_section");
-// player_input.defaultValue = "Default Player Name";
-opinion_input.defaultValue = "Default ";
-contributor_input.defaultValue = "Default ";
+opinion_input.defaultValue = "Default";
+contributor_input.defaultValue = "Default";
 // Adding form functionality for submittal
 // const dummynote = new OpinionTemplate("conta", "Sewy", "goat");
 // dummynote.renderOpinion(opinion_section);

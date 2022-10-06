@@ -12,9 +12,8 @@ const opinion_input = document.querySelector("#opinion_input") as HTMLInputEleme
 const contributor_input = document.querySelector("#contributor_input") as HTMLInputElement;
 const opinion_section = document.querySelector(".opinion_section")! as HTMLElement;
 
-// player_input.defaultValue = "Default Player Name";
-opinion_input.defaultValue = "Default ";
-contributor_input.defaultValue = "Default ";
+opinion_input.defaultValue = "Default";
+contributor_input.defaultValue = "Default";
 
 // Adding form functionality for submittal
 
