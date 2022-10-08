@@ -4,6 +4,7 @@ import { OpinionTemplate } from "./classes/opinion_template.js";
 import { onInputChange, removeAutocomplete } from "./functions/players_autocomplete.js";
 import { textareaResize } from "./functions/textarea_resize.js";
 
+
 const body = document.querySelector("body") as HTMLBodyElement;
 const opinion_form = document.querySelector(".form_container")! as HTMLFormElement;
 
@@ -14,11 +15,6 @@ const opinion_section = document.querySelector(".opinion_section")! as HTMLEleme
 
 opinion_input.defaultValue = "Default";
 contributor_input.defaultValue = "Default";
-
-// Adding form functionality for submittal
-
-// const dummynote = new OpinionTemplate("conta", "Sewy", "goat");
-// dummynote.renderOpinion(opinion_section);
 
 opinion_form.addEventListener('submit', (e: Event) => {
 
@@ -59,5 +55,9 @@ body.addEventListener("click", removeAutocomplete);
 // run textareaResize function
 
 textareaResize();
+
+// Database query
+console.log("hello");
+
 
 

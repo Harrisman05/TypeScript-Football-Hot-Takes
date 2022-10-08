@@ -172,6 +172,3 @@ function onPlayerClick(e: Event) {
     removeAutocomplete();
 
 }
-
-
-
