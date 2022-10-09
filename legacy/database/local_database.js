@@ -1,13 +1,12 @@
 const mysql = require('mysql2');
-require('dotenv').config(); // .env used to hide database and password
 
 const pool = mysql.createPool({
-    user: "root",
-    host: "containers-us-west-94.railway.app",
-    database: "railway",
-    password: "330p5GCo4O4XnB8u0DBD",
-    connectionLimit: "process.env.CONNECTION_LIMIT",
-    port: "7692"
+    user: "uzvdtxpovrtudh0m",
+    host: "bajh6jtshgg79jht11gt-mysql.services.clever-cloud.com",
+    database: "bajh6jtshgg79jht11gt",
+    password: "hwZwvFJxDgjW5lhcqmz7",
+    connectionLimit: "10",
+    port: "3306"
 });
 
 let select_all_query = "SELECT * from football_opinion_noteboard;";

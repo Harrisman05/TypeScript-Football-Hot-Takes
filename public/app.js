@@ -2,8 +2,6 @@
 import { OpinionTemplate } from "./classes/opinion_template.js";
 import { onInputChange, removeAutocomplete } from "./functions/players_autocomplete.js";
 import { textareaResize } from "./functions/textarea_resize.js";
-// @ts-ignore
-import { data } from "../index.js";
 const body = document.querySelector("body");
 const opinion_form = document.querySelector(".form_container");
 const player_input = document.querySelector("#player_input");
@@ -36,4 +34,3 @@ body.addEventListener("click", removeAutocomplete);
 textareaResize();
 // Database query
 console.log("hello");
-console.log(data);

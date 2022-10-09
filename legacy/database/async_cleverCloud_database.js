@@ -1,4 +1,4 @@
-export async function connectDB() {
+async function connectDB() {
 
     const mysql = require('mysql2');
 
@@ -16,14 +16,7 @@ export async function connectDB() {
     
     console.log(promisePool);
 
-}
-
-// connectDB();
-
-
-async function main(promisePool) {
-
-
+    
     let select_all_query = "SELECT * from football_opinion_noteboard;";
     let insert_statement = "INSERT INTO `football_opinion_noteboard` (`player_name`, `opinion`, `contributor`) VALUES ('Neymar', 'Best dribbler in the world', 'Harley Harris')";
     let delete_statement = "DELETE FROM `football_opinion_noteboard` WHERE ..."
@@ -37,3 +30,13 @@ async function main(promisePool) {
     return selection[0];
 
 }
+
+connectDB();
+
+
+async function main(promisePool) {
+
+
+
+}
+
